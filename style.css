@@ -1,0 +1,265 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Holtwood+One+SC&family=Josefin+Sans:wght@100&family=Montserrat:wght@100&family=Nanum+Brush+Script&family=Pacifico&family=Sofia+Sans+Extra+Condensed:ital,wght@1,900&family=Tangerine&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Anton', sans-serif; */
+}
+nav .logo{
+    border-radius: 50%;
+    box-shadow:2.5px 2.5px 2.5px 2.5px rgb(48, 211, 70);
+}
+nav .logo :hover{
+    font-size: larger;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color : white;
+   margin-bottom: 2rem;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* psuedo class to prvide an effect for an event
+select using selector
+selector:psuedo-class name{property:style} 
+*/
+nav ul li a:hover{
+    color: rgb(48, 211, 70);
+    font-size: larger;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.title h1{
+    font-size: 50px;
+    color: black ;
+    margin-bottom: 20px;
+}
+.title span{
+    font-size: 50px;
+    color:rgb(48, 211, 70) ;
+}
+.title p{
+    color: #555;
+    line-height: 22px;
+}
+.title a{
+    background-color: black;
+    color: rgb(48, 211, 70);
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 30px 10px;
+    border-radius: 5px;
+}
+.images{
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 70px;
+    margin-bottom:90%;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+}
+.images:hover .shape{
+    bottom: 40px;
+   
+
+}
+.images:hover .boy{
+    left: 15%;
+}
+#about{
+    margin-left: 8%;
+    margin-top: 13%;
+    margin-right: 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+ 
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.about-img img{
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+.about-text{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+.informations{
+    margin: 1rem 0 1.4rem;
+}
+.informations .info-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.informations .info-box span{
+    font-weight: 400;
+    margin-left: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#skill{
+    margin-left: 8%;
+    margin-top: 13%;
+    margin-right: 8%;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.skill-img img{
+    width: 80%;
+    object-position: center;
+    padding-left: 4rem;
+
+}
+.bar-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+
+}
+.bar-box h3,span{
+    font-size: 1.1rem;
+    font-size: 500;
+}
+.light-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-color: #555;
+    border-radius: 0.5rem;
+}
+.percent-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-color:rgb(48, 211, 70) ;
+    border-radius: 0.5rem;
+}
+.html-bar{
+    width: 94%;
+}
+.css-bar{
+    width: 84%;
+}
+.react-bar{
+    width: 87%;
+}
+.js-bar{
+    width: 95%;
+}
+#contact{
+    margin-left: 8%;
+    margin-top: 13%;
+    margin-right: 8%;
+}
+.iconDiv{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon i{
+    width: 50px;
+    height: 50px;
+    border: 1px ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 0 10px;
+   
+}
+.icon i{
+    font-size: 40px;
+}
+.icon :hover{
+        background-image: linear-gradient(red, yellow, blue);
+        color: aliceblue;
+}
+footer{
+    margin: 2rem 0;
+}
+.up-arrow{
+    float: right;
+    margin: 1rem 2rem;
+    width: 50px;
+    height: 50px;
+    border: 1px ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-image: linear-gradient(red, yellow, blue);
+
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color:rgb(48, 211, 70);
+}
+::-webkit-scrollbar-thumb{
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+/* for deploying web sit
+use netlify */
